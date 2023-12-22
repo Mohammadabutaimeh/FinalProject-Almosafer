@@ -1,21 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-12-16T02:45:22 EET" name="Default suite" finished-at="2023-12-16T02:45:32 EET" duration-ms="10180">
+  <suite started-at="2023-12-22T06:00:09 EET" name="Default suite" finished-at="2023-12-22T06:00:40 EET" duration-ms="31815">
     <groups>
     </groups>
-    <test started-at="2023-12-16T02:45:22 EET" name="Default test" finished-at="2023-12-16T02:45:32 EET" duration-ms="10180">
+    <test started-at="2023-12-22T06:00:09 EET" name="Default test" finished-at="2023-12-22T06:00:40 EET" duration-ms="31815">
       <class name="AlmosaferWebsite.AlmosaferTestCases">
-        <test-method is-config="true" signature="Setup()[pri:0, instance:AlmosaferWebsite.AlmosaferTestCases@5357c287]" started-at="2023-12-16T02:45:22 EET" name="Setup" finished-at="2023-12-16T02:45:22 EET" duration-ms="146" status="PASS">
+        <test-method is-config="true" signature="Setup()[pri:0, instance:AlmosaferWebsite.AlmosaferTestCases@3f363cf5]" started-at="2023-12-22T06:00:09 EET" name="Setup" finished-at="2023-12-22T06:00:09 EET" duration-ms="165" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method signature="FlightBookingTest()[pri:0, instance:AlmosaferWebsite.AlmosaferTestCases@5357c287]" started-at="2023-12-16T02:45:22 EET" name="FlightBookingTest" finished-at="2023-12-16T02:45:32 EET" duration-ms="9970" status="PASS">
+        <test-method signature="GoToWibsite()[pri:1, instance:AlmosaferWebsite.AlmosaferTestCases@3f363cf5]" started-at="2023-12-22T06:00:09 EET" name="GoToWibsite" finished-at="2023-12-22T06:00:17 EET" duration-ms="8421" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- FlightBookingTest -->
-        <test-method is-config="true" signature="PostTesting()[pri:0, instance:AlmosaferWebsite.AlmosaferTestCases@5357c287]" started-at="2023-12-16T02:45:32 EET" name="PostTesting" finished-at="2023-12-16T02:45:32 EET" duration-ms="1" status="PASS">
+        </test-method> <!-- GoToWibsite -->
+        <test-method signature="GoToFlightTab()[pri:2, instance:AlmosaferWebsite.AlmosaferTestCases@3f363cf5]" started-at="2023-12-22T06:00:17 EET" name="GoToFlightTab" finished-at="2023-12-22T06:00:18 EET" duration-ms="922" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GoToFlightTab -->
+        <test-method signature="FillCities()[pri:3, instance:AlmosaferWebsite.AlmosaferTestCases@3f363cf5]" started-at="2023-12-22T06:00:18 EET" name="FillCities" finished-at="2023-12-22T06:00:23 EET" duration-ms="5274" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FillCities -->
+        <test-method signature="ChooseDates()[pri:4, instance:AlmosaferWebsite.AlmosaferTestCases@3f363cf5]" started-at="2023-12-22T06:00:23 EET" name="ChooseDates" finished-at="2023-12-22T06:00:30 EET" duration-ms="6439" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ChooseDates -->
+        <test-method signature="ChooseBusinessClass()[pri:5, instance:AlmosaferWebsite.AlmosaferTestCases@3f363cf5]" started-at="2023-12-22T06:00:30 EET" name="ChooseBusinessClass" finished-at="2023-12-22T06:00:40 EET" duration-ms="10488" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ChooseBusinessClass -->
+        <test-method is-config="true" signature="PostTesting()[pri:0, instance:AlmosaferWebsite.AlmosaferTestCases@3f363cf5]" started-at="2023-12-22T06:00:40 EET" name="PostTesting" finished-at="2023-12-22T06:00:40 EET" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PostTesting -->
