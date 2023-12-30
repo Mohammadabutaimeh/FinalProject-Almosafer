@@ -5,8 +5,6 @@
     <classes>
       <class name="AlmosaferWebsite.AlmosaferTestCases">
         <methods>
-          <include name="GoToWibsite"/>
-          <include name="FillCities"/>
           <include name="Setup"/>
           <include name="ChooseDates"/>
           <include name="ChooseBusinessClass"/>

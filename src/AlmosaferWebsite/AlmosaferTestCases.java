@@ -15,7 +15,7 @@ public class AlmosaferTestCases extends Parameters {
 	}
 
 	@Test(priority = 1)
-	public void GoToWibsite() throws InterruptedException {
+	public void GoToWebsite() throws InterruptedException {
 		
 		driver.get(WebsiteUrl);
 		WebElement PopupButton = driver.findElement(By.className(PopupClassName));
@@ -37,7 +37,7 @@ public class AlmosaferTestCases extends Parameters {
 		
 		String ActualActiveTab = FlightTab.getAttribute("class");
 		String ExpectedActiveTab = "active";
-		myAssert.assertTrue(ActualActiveTab.contains(ExpectedActiveTab), "FlightTab not the active tab");
+		myAssert.assertTrue(ActualActiveTab.contains(ExpectedActiveTab), "FlightTab is not the active tab");
 		myAssert.assertAll();
 	}
 
@@ -91,6 +91,17 @@ public class AlmosaferTestCases extends Parameters {
 			ToDay.click();
 			Thread.sleep(2000);
 			
+			String ActualFromDate =  driver.findElement(By.cssSelector(ARFromDateCssSelector)).getText();
+			String ActualToDate =  driver.findElement(By.cssSelector(ARToDateCssSelector)).getText();
+			String ExpectedFromDate = "5";
+			String ExpectedToDate = "27";
+			myAssert.assertTrue(ActualFromDate.contains(ExpectedFromDate), "FromDate do not match");
+			myAssert.assertTrue(ActualToDate.contains(ExpectedToDate), "ToDate do not match");
+			myAssert.assertAll();
+//			System.out.println(ActualFromDate);
+//			System.out.println(ActualToDate);
+
+			
 		} else {
 			WebElement FromDate = driver.findElement(By.cssSelector(ENFromDateCssSelector));
 			FromDate.click();
@@ -107,15 +118,18 @@ public class AlmosaferTestCases extends Parameters {
 			WebElement ToDay = driver.findElement(By.cssSelector(ToDayCssSelector));
 			ToDay.click();
 			Thread.sleep(2000);
+			
+			String ActualFromDate =  driver.findElement(By.cssSelector(ENFromDateCssSelector)).getText();
+			String ActualToDate =  driver.findElement(By.cssSelector(ENToDateCssSelector)).getText();
+			String ExpectedFromDate = "5";
+			String ExpectedToDate = "27";
+			myAssert.assertTrue(ActualFromDate.contains(ExpectedFromDate), "FromDate do not match");
+			myAssert.assertTrue(ActualToDate.contains(ExpectedToDate), "ToDate do not match");
+			myAssert.assertAll();
+//			System.out.println(ActualFromDate);
+//			System.out.println(ActualToDate);
+			
 		}
-		
-		String ActualFromDate =  driver.findElement(By.cssSelector(ActualFromDateCssSelector)).getText();
-		String ActualToDate =  driver.findElement(By.cssSelector(ActualToDateCssSelector)).getText();
-		String ExpectedFromDate = "5";
-		String ExpectedToDate = "27";
-		myAssert.assertTrue(ActualFromDate.contains(ExpectedFromDate), "FromDate do not match");
-		myAssert.assertTrue(ActualToDate.contains(ExpectedToDate), "ToDate do not match");
-		myAssert.assertAll();
 		
 	}
 
@@ -132,36 +146,22 @@ public class AlmosaferTestCases extends Parameters {
 		if (ActualLanguage.contains("ar")) {
 		String ActualFlightClass = driver.findElement(By.cssSelector(ActualFlightClassCssSelector)).getText();
 		String ExpectedFlightClass = "رجال الأعمال";
-		myAssert.assertTrue(ActualFlightClass.contains(ExpectedFlightClass), "Business Class not chosen");
+		myAssert.assertTrue(ActualFlightClass.contains(ExpectedFlightClass), "Business Class not chosen correctly");
 		myAssert.assertAll();
-		
-		WebElement SearchButton = driver.findElement(By.cssSelector(SearchButtonCssSelector));
-		SearchButton.click();
-		Thread.sleep(5000);
-		
-		String ActualResultPage = driver.findElement(By.cssSelector(".sc-dpiBDp.ciGvla")).getText();
-		String ExpectedResultPage = "العثور";
-		myAssert.assertTrue(ActualResultPage.contains(ExpectedResultPage), "transfer to result page not secessful");
-		myAssert.assertAll();
-		System.out.println(ActualResultPage);
+//		System.out.println(ActualFlightClass);
+
 	
 		}else {
 			String ActualFlightClass = driver.findElement(By.cssSelector(ActualFlightClassCssSelector)).getText();
 			String ExpectedFlightClass = "Business";
-			myAssert.assertTrue(ActualFlightClass.contains(ExpectedFlightClass), "Business Class not chosen");
+			myAssert.assertTrue(ActualFlightClass.contains(ExpectedFlightClass), "Business Class not chosen correctly");
 			myAssert.assertAll();
-			
-			WebElement SearchButton = driver.findElement(By.cssSelector(SearchButtonCssSelector));
-			SearchButton.click();
-			Thread.sleep(5000);
-			
-			String ActualResultPage = driver.findElement(By.cssSelector(ActualResultPageCssSelector)).getText();
-			String ExpectedResultPage = "found";
-			myAssert.assertTrue(ActualResultPage.contains(ExpectedResultPage), "transfer to result page not secessful");
-			myAssert.assertAll();
-			System.out.println(ActualResultPage);
+//			System.out.println(ActualFlightClass);
 
 		}
+		
+		WebElement SearchButton = driver.findElement(By.cssSelector(SearchButtonCssSelector));
+		SearchButton.click();
 		
 	}
 

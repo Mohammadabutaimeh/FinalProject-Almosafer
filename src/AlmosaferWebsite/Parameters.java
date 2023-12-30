@@ -48,9 +48,6 @@ public class Parameters {
 	static String ARToDateCssSelector = ".sc-OxbzP.sc-bYnzgO.iPcZol";
 	static String ENToDateCssSelector = ".sc-OxbzP.sc-bYnzgO.bojUIa";
 	static String ToDayCssSelector = "div[aria-label='Tue Feb 27 2024']";
-	
-	static String ActualFromDateCssSelector = ".sc-OxbzP.sc-lnrBVv.fIoFkY";
-	static String ActualToDateCssSelector = ".sc-OxbzP.sc-bYnzgO.iPcZol";
 
 	static String ClassCssSelector = ".sc-dPPMrM.fOQKsp";
 	static String ClassBusinessCssSelector = "div[data-testid='FlightSearchCabinSelection__BusinessOption']";
