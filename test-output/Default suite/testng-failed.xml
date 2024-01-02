@@ -5,8 +5,10 @@
     <classes>
       <class name="AlmosaferWebsite.AlmosaferTestCases">
         <methods>
+          <include name="FillCities"/>
           <include name="Setup"/>
           <include name="ChooseDates"/>
+          <include name="GoToWebsite"/>
           <include name="ChooseBusinessClass"/>
           <include name="PostTesting"/>
           <include name="GoToFlightTab"/>

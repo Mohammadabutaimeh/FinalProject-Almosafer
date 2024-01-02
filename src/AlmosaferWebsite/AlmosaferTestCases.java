@@ -144,25 +144,24 @@ public class AlmosaferTestCases extends Parameters {
 		Thread.sleep(2000);
 		
 		if (ActualLanguage.contains("ar")) {
-		String ActualFlightClass = driver.findElement(By.cssSelector(ActualFlightClassCssSelector)).getText();
+		String ActualFlightClass = driver.findElement(By.cssSelector(ClassCssSelector)).getText();
 		String ExpectedFlightClass = "رجال الأعمال";
 		myAssert.assertTrue(ActualFlightClass.contains(ExpectedFlightClass), "Business Class not chosen correctly");
 		myAssert.assertAll();
 //		System.out.println(ActualFlightClass);
-
+	
 	
 		}else {
-			String ActualFlightClass = driver.findElement(By.cssSelector(ActualFlightClassCssSelector)).getText();
+			String ActualFlightClass = driver.findElement(By.cssSelector(ClassCssSelector)).getText();
 			String ExpectedFlightClass = "Business";
 			myAssert.assertTrue(ActualFlightClass.contains(ExpectedFlightClass), "Business Class not chosen correctly");
 			myAssert.assertAll();
 //			System.out.println(ActualFlightClass);
-
-		}
 		
+		}
+	
 		WebElement SearchButton = driver.findElement(By.cssSelector(SearchButtonCssSelector));
 		SearchButton.click();
-		
 	}
 
 	@AfterTest

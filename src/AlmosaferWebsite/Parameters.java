@@ -40,19 +40,19 @@ public class Parameters {
 	static String ENToInputCssSelector = "input[placeholder='Destination']";
 	static String RandomClickCssSelector = "img[alt='hero-image']";
 	
-	static String ARFromDateCssSelector = ".sc-OxbzP.sc-lnrBVv.fIoFkY";
-	static String ENFromDateCssSelector = ".sc-OxbzP.sc-lnrBVv.gKbptE";
+	static String ARFromDateCssSelector = ".sc-iHhHRJ.sc-kqlzXE.gmaGJq";
+	static String ENFromDateCssSelector = ".sc-iHhHRJ.sc-kqlzXE.blwiEW";
 	static String ARNextMonthButtonCssSelector = ".sc-eHgmQL.kgqFKY";
 	static String ENNextMonthButtonCssSelector = ".sc-eHgmQL.gVsNJo";
 	static String FromDayCssSelector = "div[aria-label='Mon Feb 05 2024']";
-	static String ARToDateCssSelector = ".sc-OxbzP.sc-bYnzgO.iPcZol";
-	static String ENToDateCssSelector = ".sc-OxbzP.sc-bYnzgO.bojUIa";
+	static String ARToDateCssSelector = ".sc-iHhHRJ.sc-OxbzP.bkqiMc";
+	static String ENToDateCssSelector = ".sc-iHhHRJ.sc-OxbzP.edzUwL";
 	static String ToDayCssSelector = "div[aria-label='Tue Feb 27 2024']";
 
-	static String ClassCssSelector = ".sc-dPPMrM.fOQKsp";
+	static String ClassCssSelector = ".sc-fAJaQT.kxzgEA";
 	static String ClassBusinessCssSelector = "div[data-testid='FlightSearchCabinSelection__BusinessOption']";
-	static String ActualFlightClassCssSelector = ".sc-dPPMrM.fOQKsp";
+	
 
-	static String SearchButtonCssSelector = "div[class='sc-hARARD jGOsnk d-none d-md-block'] button[type='button']";
-	static String ActualResultPageCssSelector = ".sc-dPPMrM.fOQKsp";
+	static String SearchButtonCssSelector = "div[class='sc-hizQCF yTOfA d-none d-md-block'] button[type='button']";
+
 }
